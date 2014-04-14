@@ -12,7 +12,7 @@ ruby
 VIM higher than 7.0 compiled with rubyopts
 Clone this project git clone git@github.com:devkato/dotvim.git ~/.vim
 
-Install vundle.git git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle.git
+Install vundle.git git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle.git
 
 Open vim and install Defined VIM Plugins. :BundleInstall
 

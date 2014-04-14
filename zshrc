@@ -7,7 +7,7 @@ export HISTSIZE=2000
 export HISTFILESIZE=2000
 
 # # alias
-alias ls='ls -FG'
+alias ls='ls -FG --color=auto'
 alias ll='ls -la'
 
 PROMPT='%F{green}%B[%T][%n@%C$(parse_git_branch)]%#%b%f '

@@ -6,6 +6,9 @@ export LC_ALL="ja_JP.UTF-8"
 export HISTSIZE=2000
 export HISTFILESIZE=2000
 
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # # alias
 alias ls='ls -FG' # --color=auto'
 alias ll='ls -la'

@@ -7,7 +7,7 @@ export HISTSIZE=2000
 export HISTFILESIZE=2000
 
 # # alias
-alias ls='ls -FG --color=auto'
+alias ls='ls -FG' # --color=auto'
 alias ll='ls -la'
 
 PROMPT='%F{green}%B[%T][%n@%C$(parse_git_branch)]%#%b%f '
@@ -62,4 +62,10 @@ function chpwd() {
         ls
     fi
 }
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt hist_ignore_dups     # ignore duplication command history list
+setopt share_history        # share command history data 
 

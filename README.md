@@ -18,11 +18,6 @@ ruby
 
 VIM higher than 7.0 compiled with rubyopts
 
-Clone this project
-
-
-`git clone git@github.com:devkato/dotvim.git ~/.vim`
-
 
 Install vundle.git 
 

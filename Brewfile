@@ -13,7 +13,6 @@ install jq || true
 install curl || true
 install wget || true
 install dnsmasq || true
-install composer || true
 # Cask Packages
 cask install iterm2 || true
 cask install alfred || true
@@ -41,3 +40,16 @@ cask install google-japanese-ime || true
 cask install kindle || true
 cask install gimp || true
 cask install macvim || true
+cask install tinkertool || true
+cask install totalfinder || true
+cask install vlc || true
+cask install mplayerx || true
+cask install clamxav || true
+# manual install
+# twitter
+# line
+# keynote
+# pages
+# numbers
+# formatmatch
+# simplemind

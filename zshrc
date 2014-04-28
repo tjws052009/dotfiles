@@ -6,6 +6,7 @@ export LC_ALL="ja_JP.UTF-8"
 export HISTSIZE=2000
 export HISTFILESIZE=2000
 
+export PATH=/usr/local/bin:$PATH
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 

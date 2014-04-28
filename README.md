@@ -21,7 +21,7 @@ VIM higher than 7.0 compiled with rubyopts
 
 Install vundle.git 
 
-`git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle.git`
+`git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle`
 
 Open vim and install Defined VIM Plugins. 
 

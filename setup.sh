@@ -22,7 +22,7 @@ pushd ~/.dotfiles
 brew bundle
 popd
 
-chsh -s /bin/zsh tsugi
+chsh -s /bin/zsh
 
 # install vim bundle
 # vim -c "BundleInstall|q"

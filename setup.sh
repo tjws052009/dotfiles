@@ -23,4 +23,4 @@ brew bundle
 popd
 
 # install vim bundle
-vim -c "BundleInstall|q"
+# vim -c "BundleInstall|q"

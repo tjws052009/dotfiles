@@ -11,13 +11,28 @@ curl -sSL "https://raw.githubusercontent.com/tjws052009/dotfiles/master/setup.sh
 
 Requirement:
 
+
 git
+
 ruby
+
 VIM higher than 7.0 compiled with rubyopts
-Clone this project git clone git@github.com:devkato/dotvim.git ~/.vim
 
-Install vundle.git git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle.git
+Clone this project
 
-Open vim and install Defined VIM Plugins. :BundleInstall
 
-Compile Command-T plugin. run "rvm use system" if you use RVM. cd ~/.vim/bundle/Command-T/ruby/command-t ruby extconf.rb make sudo make install
+`git clone git@github.com:devkato/dotvim.git ~/.vim`
+
+
+Install vundle.git 
+
+`git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle.git`
+
+Open vim and install Defined VIM Plugins. 
+
+`:BundleInstall`
+
+Compile Command-T plugin. run "rvm use system" if you use RVM. 
+
+
+`cd ~/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make && sudo make install`

@@ -29,5 +29,4 @@ Open vim and install Defined VIM Plugins.
 
 Compile Command-T plugin. run "rvm use system" if you use RVM. 
 
-
 `cd ~/.vim/bundle/Command-T/ruby/command-t && ruby extconf.rb && make && sudo make install`

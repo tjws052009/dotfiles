@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-./setup.sh
+curl -sSL "https://raw.githubusercontent.com/tjws052009/dotfiles/master/setup.sh" | bash
 
 ====================================================
 

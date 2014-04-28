@@ -1,5 +1,6 @@
 #/bin/bash
-git clone git@github.com:tjws052009/dotfiles.git ~/.dotfiles 
+# git clone git@github.com:tjws052009/dotfiles.git ~/.dotfiles 
+git clone https://github.com/tjws052009/dotfiles.git ~/.dotfiles
 ln -s ~/.dotfiles/zshrc .zshrc
 ln -s ~/.dotfiles/vimrc .vimrc
 ln -s ~/.dotfiles/tmux.conf .tmux.conf

@@ -22,5 +22,8 @@ pushd ~/.dotfiles
 brew bundle
 popd
 
-# install vim bundle
-vim -c "BundleInstall|q"
+chsh -s /bin/zsh
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+
+# vim -c "BundleInstall"

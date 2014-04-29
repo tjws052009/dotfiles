@@ -3,6 +3,8 @@ dotfiles
 
 curl -sSL "https://raw.githubusercontent.com/tjws052009/dotfiles/master/setup.sh" | bash
 
+# ちなみに rbenv の自動インストールがうまくいかないっぽい。 orz
+
 ====================================================
 
 色んな方から拝借したりしてます。とりあえず、あげておく。

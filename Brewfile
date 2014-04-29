@@ -41,7 +41,7 @@ cask install kindle || true
 cask install gimp || true
 cask install macvim || true
 cask install tinkertool || true
-cask install totalfinder || true
+cask install xtrafinder || true
 cask install vlc || true
 cask install mplayerx || true
 cask install clamxav || true

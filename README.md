@@ -1,9 +1,9 @@
 dotfiles
 ========
 
-curl -sSL "https://raw.githubusercontent.com/tjws052009/dotfiles/master/setup.sh" | bash
+curl -sSL "htps://raw.githubusercontent.com/tjws052009/dotfiles/master/setup.sh" | bash
 
-## ちなみに rbenv の自動インストールがうまくいかないっぽい。 orz
+\# ちなみに rbenv の自動インストールがうまくいかないっぽい。 orz
 
 ====================================================
 

@@ -25,5 +25,6 @@ popd
 chsh -s /bin/zsh
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+ln -s ~/.dotfiles/template ~/.vim/template
 
 # vim -c "BundleInstall"

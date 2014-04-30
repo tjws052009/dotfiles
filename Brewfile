@@ -13,6 +13,7 @@ install jq || true
 install curl || true
 install wget || true
 install dnsmasq || true
+install tmux || true
 # Cask Packages
 cask install iterm2 || true
 cask install alfred || true

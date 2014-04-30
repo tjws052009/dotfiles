@@ -12,10 +12,10 @@ brew update
 brew install rbenv ruby-build
 
 # installing ruby
-rbenv install 2.1.1
-rbenv rehash
+# rbenv install 2.1.1
+# rbenv rehash
 
-rbenv global 2.1.1
+# rbenv global 2.1.1
 
 # run brewfile
 pushd ~/.dotfiles

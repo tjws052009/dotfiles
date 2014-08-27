@@ -46,6 +46,7 @@ cask install xtrafinder || true
 cask install vlc || true
 cask install mplayerx || true
 cask install clamxav || true
+cask install clipmenu || true
 # manual install
 # twitter
 # line

@@ -13,6 +13,20 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # # alias
 alias ls='ls -FG' # --color=auto'
 alias ll='ls -la'
+alias be='bundle exec'
+alias mkdirdate='mkdir `date "+%Y%m%d"`'
+# alias mysql='mysql --pager="less -n -i -S"'
+alias devdb='mysql -ulancers -h192.168.56.101 lancers'
+alias proddb="mysql -ulancers_office  -p'_33gL?I0Oz' -h192.168.100.254 -P 8025 lancers"
+
+# aliasではないけど、script上書き 
+scriptl() { 
+  LOG_DIR=$HOME/.work_log
+  if [ ! -d $LOG_DIR ]; then
+    mkdir $LOG_DIR
+  fi
+  script -a $LOG_DIR/`date +%Y%m%d` 
+}
 
 PROMPT='%F{green}%B[%T][%n@%C$(parse_git_branch)]%#%b%f '
 RPROMPT=$'[%~]'
@@ -54,8 +68,8 @@ function do_enter() {
     zle reset-prompt
     return 0
 }
-zle -N do_enter
-bindkey '^m' do_enter
+# zle -N do_enter
+# bindkey '^m' do_enter
 
 function chpwd() {
     if [ 200 -lt `ls -1 | wc -l` ]; then

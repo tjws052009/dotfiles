@@ -33,6 +33,7 @@ set modelines=0
 set noswapfile
 set lazyredraw
 set ttyfast
+" set list
 " set foldmethod=indent
 
 set cursorline
@@ -139,6 +140,8 @@ Bundle 'The-NERD-tree'
 " Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'gitv'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'groenewege/vim-less'
 
 
 filetype plugin indent on
@@ -218,7 +221,7 @@ nmap <silent> <Leader>n :NERDTreeToggle<CR>
 
 let g:CommandTMatchWindowAtTop = 1
 let g:CommandTMaxHeight = 30
-let g:CommandTMaxFiles = 4000
+let g:CommandTMaxFiles = 10000
 
 " let g:Powerline_symbols = 'fancy'
 
@@ -229,3 +232,25 @@ let g:CommandTMaxFiles = 4000
 " let g:ctrlp_clear_cache_on_exit = 0   " 終了時キャッシュをクリアしない
 " let g:ctrlp_mruf_max            = 500 " MRUの最大記録数
 " let g:ctrlp_open_new_file       = 1   " 新規ファイル作成時にタブで開く
+
+" http://blog.remora.cx/2011/08/display-invisible-characters-on-vim.html
+" 全角スペース・行末のスペース・タブの可視化
+if has("syntax")
+  " PODバグ対策
+  syn sync fromstart
+
+  function! ActivateInvisibleIndicator()
+    " 下の行の"　"は全角スペース
+    syntax match InvisibleJISX0208Space "　" display containedin=ALL
+    highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=darkgray gui=underline
+    syntax match InvisibleTrailedSpace "[ \t]\+$" display containedin=ALL
+    highlight InvisibleTrailedSpace term=underline ctermbg=Red guibg=NONE gui=undercurl guisp=darkorange
+    syntax match InvisibleTab "\t" display containedin=ALL
+    highlight InvisibleTab term=underline ctermbg=white gui=undercurl guisp=darkslategray
+  endfunction
+
+  augroup invisible
+    autocmd! invisible
+    autocmd BufNew,BufRead * call ActivateInvisibleIndicator()
+  augroup END
+endif

@@ -45,7 +45,7 @@ set ambiwidth=double
 "画面最後の行をできる限り表示する。
 set display+=lastline
 
-set wildignore+=bin/*,vendor/*,log/*,tmp/*,spec/reports/*,reports/*,*.png,*.jpg,public/coverage/*
+set wildignore+=bin/*,vendors/*,vendor/*,log/*,tmp/*,spec/reports/*,reports/*,*.png,*.jpg,public/coverage/*
 
 " --------------------------------------------------------------------------------
 " Search Settings
@@ -125,7 +125,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'git://github.com/vim-scripts/linediff.vim.git'
 " Bundle 'bufexplorer.zip'
-Bundle 'sudo.vim'
+" Bundle 'sudo.vim'
 " Bundle 'git://github.com/Shougo/vimfiler.git'
 " Bundle 'git://github.com/Shougo/unite.vim.git'
 " Bundle 'BlockDiff'
@@ -133,13 +133,13 @@ Bundle 'sudo.vim'
 " Bundle 'ShowMarks'
 " Bundle 'DrawIt'
 Bundle 'Command-T'
-Bundle 'The-NERD-tree'
+" Bundle 'The-NERD-tree'
 " Bundle 'EasyMotion'
 " Bundle 'Align'
 " Bundle 'Lokaltog/vim-powerline'
 " Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'gitv'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 

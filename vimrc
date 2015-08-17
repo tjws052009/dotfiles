@@ -8,7 +8,7 @@ syntax on
 filetype on
 filetype indent on
 filetype plugin on
-" set autoindent
+set autoindent
 set copyindent
 set number
 set ruler
@@ -35,6 +35,10 @@ set lazyredraw
 set ttyfast
 " set list
 " set foldmethod=indent
+
+autocmd FileType php,ctp set tabstop=4
+autocmd FileType php,ctp set shiftwidth=4
+autocmd FileType php,ctp set softtabstop=4
 
 set cursorline
 hi CursorLine cterm=NONE ctermbg=black
@@ -123,7 +127,7 @@ call vundle#rc()
 " Vundle plugins
 " Bundle 'project.tar.gz'
 Bundle 'gmarik/vundle'
-Bundle 'git://github.com/vim-scripts/linediff.vim.git'
+" Bundle 'git://github.com/vim-scripts/linediff.vim.git'
 " Bundle 'bufexplorer.zip'
 " Bundle 'sudo.vim'
 " Bundle 'git://github.com/Shougo/vimfiler.git'
@@ -138,10 +142,10 @@ Bundle 'Command-T'
 " Bundle 'Align'
 " Bundle 'Lokaltog/vim-powerline'
 " Bundle 'kien/ctrlp.vim'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'gitv'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'gitv'
+" Bundle 'kchmck/vim-coffee-script'
+" Bundle 'groenewege/vim-less'
 
 
 filetype plugin indent on

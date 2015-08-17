@@ -16,6 +16,8 @@ alias ll='ls -la'
 alias be='bundle exec'
 alias mkdirdate='mkdir `date "+%Y%m%d"`'
 # alias mysql='mysql --pager="less -n -i -S"'
+alias devdb='mysql -ulancers -h192.168.33.10 lancers'
+alias proddb="mysql -ulancers_office  -p'_33gL?I0Oz' -h192.168.100.254 -P 8025 lancers"
 
 # aliasではないけど、script上書き
 scriptl() {
@@ -42,6 +44,7 @@ setopt no_beep
 setopt sh_word_split
 setopt append_history
 setopt autolist
+setopt nonomatch
 
 # # functions
 git_color() {
@@ -110,7 +113,7 @@ bindkey '^]' peco-src
 function peco-hist () {
   local selected_dir=$(history -n 1 | peco --query "$LBUFFER")
   if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
+    BUFFER="${selected_dir}"
     zle accept-line
   fi
   zle clear-screen
@@ -120,3 +123,9 @@ bindkey '^[' peco-hist
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+
+# boot2docker settings
+export DOCKER_CERT_PATH=/Users/lancers078-01/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376

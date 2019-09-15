@@ -42,7 +42,7 @@ set ambiwidth=double
 "画面最後の行をできる限り表示する。
 set display+=lastline
 
-set wildignore+=bin/*,vendors/*,vendor/*,log/*,tmp/*,spec/reports/*,reports/*,*.png,*.jpg,public/coverage/*
+set wildignore+=bin/*,vendors/*,vendor/*,log/*,tmp/*,spec/reports/*,reports/*,*.png,*.jpg,public/coverage/*,node_modules/*
 
 " --------------------------------------------------------------------------------
 " Search Settings
@@ -123,3 +123,5 @@ let g:CommandTMatchWindowAtTop = 1
 let g:CommandTMaxHeight = 30
 let g:CommandTMaxFiles = 10000
 let g:CommandTSuppressMaxFilesWarning=1
+let g:CommandTMatchWindowReverse=0
+let g:CommandTWildIgnore="*/bin/*,*/vendors/*,*/vendor/*,*/log/*,*/tmp/*,*/spec/reports/*,*/reports/*,*.png,*.jpg,*/public/coverage/*,*/node_modules/*"

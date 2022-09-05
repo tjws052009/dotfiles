@@ -100,7 +100,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -124,4 +124,5 @@ let g:CommandTMaxHeight = 30
 let g:CommandTMaxFiles = 10000
 let g:CommandTSuppressMaxFilesWarning=1
 let g:CommandTMatchWindowReverse=0
-let g:CommandTWildIgnore="*/bin/*,*/vendors/*,*/vendor/*,*/log/*,*/tmp/*,*/spec/reports/*,*/reports/*,*.png,*.jpg,*/public/coverage/*,*/node_modules/*"
+let g:CommandTWildIgnore="*/bin/*,*/vendors/*,*/vendor/*,*/log/*,*/tmp/*,*/spec/reports/*,*/reports/*,*.png,*.jpg,*/public/coverage/*,*/node_modules/*,*/bundle/*"
+let g:CommandTHighlightColor = "Underlined"
